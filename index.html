@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Project</title>
+    <link rel="icon" type="image/x-icon" href="files/files/philsci.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="logo1">
+        <a href=""><img src="files/files/philsci.png"></a>
+        <a href="">A Better Future</a>
+    </header>
+    <div id="div2">
+        <img src="files/files/poor.jpg">
+        <p>A Better Future aims to provide food and other necessities to people who need it. Join us in making the world a better place, for us, and for them.</p>
+    </div>
+
+    <div id="div1">
+    <button id="button1" onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </div>
+
+    <div id="id01" class="modal">
+    
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+
+            <div class="container">
+            <p id="alert"></p>
+    
+            <label for="uname"><b>Username<span id="userError"></span></b></label>
+            <input id="uname" type="text" placeholder="Enter Username" name="uname">
+    
+            <label for="psw"><b>Password<span id="passError"></span></b></label>
+            <input id="psw" type="password" placeholder="Enter Password" name="psw">
+                
+            <button type="button" id="button2" onclick="login()">Login</button>
+            </div>
+    
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <section class="contact">
+            <h6>CONTACT INFORMATION</h6>
+            <section>
+                <ul>
+                    <li class="name">Josh Ethan C. Mercado</li>
+                    <li>+63 939 339 9682</li>
+                    <li>jemercado@smc.pshs.edu.ph</li>
+                    <div class="socials">
+                        <li><a href="https://web.facebook.com/josh.mercado.1460" target="_blank"><img src="images/blank.png" id="fb"></a></li>
+                        <li><a href="https://www.instagram.com/joshmercado88/" target="_blank"><img src="images/blank.png" id="ig"></a></li>
+                        <li><a href="https://twitter.com/FightPoverty" target="_blank"><img src="images/blank.png" id="tweet"></a></li>
+                    </div>
+                </ul>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
